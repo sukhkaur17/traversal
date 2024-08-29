@@ -1,0 +1,530 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Moderustic:wght@300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<title>Traversal-Home</title>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<style>
+*{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+ font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header{
+height:80px;
+width:100%;
+background-color:#eee;
+float:left;
+}
+.list{
+height:80px;
+width:40%;
+background-color:white;
+margin-left:20px;
+float:left;
+
+}
+.list li{
+height:40px;
+width:11%;
+display:inline;
+margin-left:24px;
+line-height:90px;
+outline:none;
+border:none;
+color:#666;
+font-size:16px;
+background-color:white;
+}
+.header button{
+height:50px;
+width:12%;
+float:left;
+margin-left:170px;
+margin-top:15px;
+font-size:16px;
+border:none;
+outline:none;
+color:white;
+background-color:#ff1654;
+border-radius:15px;
+}
+.next{
+height:54px;
+width:4%;
+border-radius:30px;
+background-color:grey;
+float:left;
+margin-left:100px;
+margin-top:15px;
+}
+.destination{
+height:650px;
+width:100%;
+background-image:url('./assets/dibai.webp');
+background-size:cover;
+}
+.des-info{
+height:500px;
+width:50%;
+background-color:none;
+margin-left:150px;
+}
+.destination select{
+height:45px;
+width:22%;
+outline:none;
+border:none;
+margin-top:50px;
+border-radius:5px;float:left;
+}
+.date{
+height:45px;
+width:22%;
+outline:none;
+border:none;
+margin-top:50px;
+border-radius:5px;
+background-color:white;
+margin-left:40px;
+float:left;
+}
+.popular-des{
+height:1500px;
+width:100%;
+}
+
+.Packages{
+height:1550px;
+width:90%;
+background-color:white;
+margin-top:40px;
+margin-left:80px;
+}
+.paris{
+height:270px;
+width:42%;
+float:left;margin-left:50px;
+border:1px solid  #c5c5c5;
+border-radius:15px;
+display:flex;margin-bottom:70px;
+}
+.paris-img{
+height:235;
+width:38%;
+background-image:url('./assets/paris1.jpeg');
+background-size:cover;
+border-radius:10px;margin-top:15px;
+margin-left:15px;
+}
+.paris-info{
+height:200px;
+width:50%;
+margin-left:20px;
+margin-top:40px;
+}
+
+.numbering{
+height:280px;
+width:100%;
+background-color:white;
+}
+.branches{
+height:280px;
+width:20%;
+background-color:white;
+margin-left:30px;
+float:left;
+}
+.places{
+height:600px;
+width:100%;background-color:white;
+}
+.main-img{
+height:550px;
+width:45%;
+background-image:url('./assets/maldives1.jpg');
+background-size:cover;
+outline:none;
+border:none;box-sizing:border-box;
+border-radius:20px;
+margin-left:100px;
+float:left;margin-top:30px;
+}
+.other-img{
+height:550px;
+width:40%;
+float:left;margin-left:20px;
+background-color:white;
+margin-top:30px;
+border-radius:20px;
+}
+.images{
+height:250px;width:40%;
+background-color:pink;
+border-radius:20px;margin-left:20px;
+float:left;
+margin-top:15px;
+}
+.images p{
+color:white;
+font-size:16px;
+margin-top:10px;
+margin-left:20px;
+}
+.traveling{
+height:500px;
+width:100%;
+background-image:url('./assets/pix.jpg');
+background-color:grey;
+background-size:cover;
+}
+.travel-info{
+height:400px;
+width:45%;
+background-color:none;
+margin-left:100px;
+margin-top:100px;
+padding-top:100px;
+}
+.feedback{
+height:450px;
+width:100%;
+background-color:white;
+}
+.footer{
+height:550px;
+width:100%;
+background-color:white;
+}
+.footer-headings{
+height:350px;
+width:100%;
+background-color:white;
+
+}
+.company,.links,.services{
+height:300px;
+width:15%;
+background-color:white;
+float:left;
+margin-left:65px;
+margin-top:30px;
+}
+.company ul li{
+  list-style: none;
+  font-size:15px;
+  margin-left:50px;line-height:45px;
+  color:grey;
+}
+
+</style>
+</head>
+<body>
+ 
+	<div class="header">
+		<h1 style="margin-left:100px;line-height:80px;font-size:38px;float:left;">Traversal</h1>
+		<ul class="list">
+		<li><a href="index.html" style="text-decoration:none;">Home</a></li>
+			<li><a href="packages.html" style="text-decoration:none;">Packages</a></li>
+			<li><a href="destinations.html" style="text-decoration:none;">Destinations</a></li>
+			<li><a href="Blog.html" style="text-decoration:none;">Blog</a></li>
+			<li><a href="contact.html" style="text-decoration:none;">Contact</a></li>
+			<li><a href="about.html" style="text-decoration:none;">About</a></li>
+			</ul>
+		<button>Get In Touch</button>	
+		<i class="fa-regular fa-moon"style="font-size:28px;float:left;color:grey;margin-left:30px;margin-top:25px;"></i>
+		<div class="next">
+			<center><i class="fa-solid fa-angles-right" style="font-size:22px;color:white;margin-top:15px;"></i></center>
+		</div>	
+	</div>
+	
+	<div class="destination">
+		<div class="des-info">
+			<h1 style="font-size:55px;padding-top:150px;color:white;font-family: 'Lato', sans-serif;">You don't need to go far to find what matters.</h1>
+			<p style="font-size:18px;color:white;font-family: 'Lato', sans-serif;"> Discover your next Adventure.</p>
+		<select>
+		<option>Destination</option>
+		<option>Dubai</option>
+		<option>Thailand</option>
+		<option>Australia</option>
+		<option>England</option>
+		<option>Singapore</option>
+		<option>Morecious</option>
+		</select>
+		<div class="date">
+			<center><p style="float:left;font-size:17px;margin-left:20px;margin-top:10px;">dd-mm-yy</p>
+			<i class="fa-regular fa-calendar-days"style="float:left;margin-left:10px;margin-top:10px;"></i></center>
+		</div>
+		<button style="height:45px;width:22%;background-color:#ff1654;border:none;outline:none;margin-top:50px;margin-left:40px;border-radius:5px;color:white;">
+		<i class="fa-solid fa-magnifying-glass" style="margin-right:15px;color:white;"></i>Search</button>
+		
+		</div>
+	</div>
+	
+	<div class="popular-des">
+		<p style="margin-left:120px;font-size:23px;margin-top:50px;color:#ff1654;font-family: 'Lato', sans-serif;">VISIT</p>
+		<h1 style="margin-left:120px;font-family: 'Lato', sans-serif;margin-top:10px;font-size:40px;">Popular Destinations</h1>
+		
+		<div class="Packages">
+			<div class="paris">
+				<div class="paris-img"> </div>
+					<div class="paris-info">
+						<h2>Paris</h2>
+						<p style="color:grey;font-size:17px;margin-top:10px;" >3days,4nights</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:20px;">
+						<p style="float:left;margin-top:10px;">Start from</p>
+						<p style="color:red;float:left;margin-left:100px;margin-top:10px;">$1650</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:40px;">
+						<br>
+						<p style="color:grey;font-size:17px;">Per person on twin sharing</p>
+					</div>
+			</div>
+			<div class="paris">
+			<div class="paris-img" style="background-image:url('./assets/dubai.jpeg');
+background-size:cover;"> </div>
+					<div class="paris-info">
+						<h2>Dubai</h2>
+						<p style="color:grey;font-size:17px;margin-top:10px;" >5days,4nights</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:20px;">
+						<p style="float:left;margin-top:10px;">Start from</p>
+						<p style="color:red;float:left;margin-left:100px;margin-top:10px;">AED 2050</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:40px;">
+						<br>
+						<p style="color:grey;font-size:17px;">Per person on twin sharing</p>
+					</div>
+			</div>
+			
+			<div class="paris">
+				<div class="paris-img"style="background-image:url('./assets/maldives.jpeg');
+									background-size:cover;"> </div>
+					<div class="paris-info">
+						<h2>Maldives</h2>
+						<p style="color:grey;font-size:17px;margin-top:10px;" >3days,4nights</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:20px;">
+						<p style="float:left;margin-top:10px;">Start from</p>
+						<p style="color:red;float:left;margin-left:100px;margin-top:10px;">$1650</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:40px;">
+						<br>
+						<p style="color:grey;font-size:17px;">Per person on twin sharing</p>
+					</div>
+			</div>
+			<div class="paris">
+			<div class="paris-img" style="background-image:url('./assets/greece.jpeg');
+									background-size:cover;"> </div>
+					<div class="paris-info">
+						<h2>Greece</h2>
+						<p style="color:grey;font-size:17px;margin-top:10px;" >5days,4nights</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:20px;">
+						<p style="float:left;margin-top:10px;">Start from</p>
+						<p style="color:red;float:left;margin-left:100px;margin-top:10px;">AED 2050</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:40px;">
+						<br>
+						<p style="color:grey;font-size:17px;">Per person on twin sharing</p>
+					</div></div>
+			
+			<div class="paris">
+				<div class="paris-img"style="background-image:url('./assets/london.jpeg');
+									background-size:cover;"> </div>
+					<div class="paris-info">
+						<h2>London</h2>
+						<p style="color:grey;font-size:17px;margin-top:10px;" >3days,4nights</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:20px;">
+						<p style="float:left;margin-top:10px;">Start from</p>
+						<p style="color:red;float:left;margin-left:100px;margin-top:10px;">$1650</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:40px;">
+						<br>
+						<p style="color:grey;font-size:17px;">Per person on twin sharing</p>
+					</div>
+			</div>
+			<div class="paris">
+			<div class="paris-img" style="background-image:url('./assets/thailand.jpeg');
+									background-size:cover;"> </div>
+					<div class="paris-info">
+						<h2>Thailand</h2>
+						<p style="color:grey;font-size:17px;margin-top:10px;" >5days,4nights</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:20px;">
+						<p style="float:left;margin-top:10px;">Start from</p>
+						<p style="color:red;float:left;margin-left:100px;margin-top:10px;">AED 2050</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:40px;">
+						<br>
+						<p style="color:grey;font-size:17px;">Per person on twin sharing</p>
+					</div></div>
+			
+			<div class="paris">
+				<div class="paris-img"style="background-image:url('./assets/singpore.jpeg');
+									background-size:cover;"> </div>
+					<div class="paris-info">
+						<h2>Singapore</h2>
+						<p style="color:grey;font-size:17px;margin-top:10px;" >3days,4nights</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:20px;">
+						<p style="float:left;margin-top:10px;">Start from</p>
+						<p style="color:red;float:left;margin-left:100px;margin-top:10px;">$1650</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:40px;">
+						<br>
+						<p style="color:grey;font-size:17px;">Per person on twin sharing</p>
+					</div>
+			</div>
+			<div class="paris">
+			<div class="paris-img" style="background-image:url('./assets/australia.jpeg');
+									background-size:cover;"> </div>
+					<div class="paris-info">
+						<h2>Australia</h2>
+						<p style="color:grey;font-size:17px;margin-top:10px;" >5days,4nights</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:20px;">
+						<p style="float:left;margin-top:10px;">Start from</p>
+						<p style="color:red;float:left;margin-left:100px;margin-top:10px;">AED 2050</p>
+						<hr style="border:1px dotted #c5c5c5;width:95%;margin-top:40px;">
+						<br>
+						<p style="color:grey;font-size:17px;">Per person on twin sharing</p>
+					</div></div>
+			</div>
+		</div>	
+		
+ 
+	<div class="numbering">
+	<div class="branches"style="margin-left:100px;">
+		<center>
+		<h1 style="font-size:55px; color:red;margin-top:100px;">730</h1>
+		<p style="color:grey;font-size:18px;">Branches</p>
+		</center>
+	
+	</div>
+	<div class="branches">
+	<center>
+		<h1 style="font-size:55px; color:red;margin-top:100px;">1680</h1>
+		<p style="color:grey;font-size:18px;">Travel guides</p>
+		</center></div>
+	<div class="branches">
+	<center>
+		<h1 style="font-size:55px; color:red;margin-top:100px;">812</h1>
+		<p style="color:grey;font-size:18px;">Happy Customers</p>
+		</center></div>
+	<div class="branches">
+	<center>
+		<h1 style="font-size:45px; color:red;margin-top:100px;">990</h1>
+		<p style="color:grey;font-size:18px;">Awards</p>
+		</center></div>
+	</div>
+	
+	
+	<div class="places">
+		<div class="main-img">
+			<p style="color:white;
+				font-size:16px;
+				margin-top:10px;
+				margin-left:20px;">3days,4nights</p>
+			<p style="font-size:14px;color:white;margin-left:20px;"> From $1600</p>
+		</div>
+		<div class="other-img">
+			<div class="images" style="background-image:url('./assets/australia.jpeg');background-size:cover;">
+			<p>3days,4nights</p>
+			<p style="font-size:14px;"> From $1600</p>
+			</div>
+			<div class="images" style="background-image:url('./assets/london.jpeg');background-size:cover;">
+			<p>3days,4nights</p>
+			<p style="font-size:14px;"> From $1600</p>
+			</div>
+			<div class="images" style="background-image:url('./assets/singpore.jpeg');background-size:cover;">
+			<p>3days,4nights</p>
+			<p style="font-size:14px;"> From $1600</p>
+			</div>
+			<div class="images" style="background-image:url('./assets/thailand.jpeg');background-size:cover;">
+			<p>3days,4nights</p>
+			<p style="font-size:14px;"> From $1600</p>
+			</div>
+			
+			
+		</div>
+	</div>
+	
+	<div class="traveling">
+		<div class="travel-info">
+		<h1 style="color:white;font-size:40px;"> Travelling makes a man wiser,But less happy.</h1><br>
+		<p style="color:white;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit.</p><br><br>
+		<button style="height:45px;margin-left:15px;width:24%;border-radius:10px;outline:none;border:none;background-color:#ff1654;color:white;font-size:17px;"> Read More</button>
+		</div>
+	
+	</div>
+	<br><br><br>
+	
+	<div class="feedback">
+		<center>
+			<p style="color:#ff1654;font-size:22px;font-style:bold;">HERE'S WHAT THEY HAVE TO SAY</p>
+			<h1 style="font-size:45px;">Our Clients Do The Talking</h1>
+			<br>
+			<i class="fa-solid fa-message"style="font-size:30px;color:#ff1654;"></i>
+			<br><br>
+			<p style="margin-left:300px;margin-right:300px;font-size:18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit.</p>
+			<br>
+			<div class="photo" style="height:100px;width:7%;background-color:red;border-radius:55px;background-image:url('./assets/user.jpg');background-size:cover;"></div>
+			<p style="font-size:18px;">Shweta</p>
+		</center>
+	</div>
+	<div class="footer">
+		<div class="footer-headings">
+			<div class="company">
+			<h2 style="margin-left:50px;margin-top:20px;">Company</h2>
+			<ul>
+			<li>Home</li>
+			<li>About Us</li>
+			<li>Services</li>
+			<li>Blog</li>
+			<li>Contact Us</li>
+			</ul>
+		</div>
+		<div class="company">
+			<h2 style="margin-left:50px;margin-top:20px;">Useful Links</h2>
+			<ul>
+			<li>Destinations</li>
+			<li>Our Branches</li>
+			<li>Latest Media</li>
+			<li>Aboutr Company</li>
+			<li>Our Packages</li>
+			</ul></div>
+		<div class="company">
+			<h2 style="margin-left:50px;margin-top:20px;">Our Services</h2>
+			<ul>
+			<li>Privacy Policy</li>
+			<li>Our Terms</li>
+			<li>Services</li>
+			<li>Landing page</li>
+			<li>Our guides</li>
+			</ul></div>
+		<div class="newsletter" style="height:300px;width:35%;background-color:white;float:left;margin-left:30px;margin-top:30px;">
+			<h2 style="margin-left:50px;margin-top:20px;">Newsletter </h2>
+			<br>
+			<p style="margin-left:50px;">Get latest updates and offers. </p>
+			<br>
+			<input type="text" placeholder="  Email Addresss" style="height:35px;width:55%;margin-left:50px;border-radius:3px;border:none;outline:none;background-color:#eee;font-size:16px;">
+			<button style="height:40px;margin-left:5px;width:24%;border-radius:10px;outline:none;border:none;background-color:#ff1654;color:white;font-size:17px;">Go</button>
+			<br><br>
+			<p style="color:grey;margin-left:20px;margin-right:10px;">Sign up for our latest news & articles. We won’t give you spam mails.</p>
+		</div>
+		</div>
+		<br>
+		<hr style="width:85%;border:1px solid #ddd;margin-left:120px;">
+		
+		<div class="space" style="height:50px;width:100%;background-color:white;margin-top:40px;background-color:white;">
+		<p style="margin-left:100px;float:left;color:grey;">© 2020 Traversal. All rights reserved.Design by W3Layouts</p>
+		<i class="fa-brands fa-facebook-f" style="font-size:16px;float:left;margin-left:600px;"></i>
+		<i class="fa-brands fa-linkedin-in" style="font-size:18px;float:left;margin-left:20px;"></i>
+		<i class="fa-brands fa-twitter"style="font-size:18px;float:left;margin-left:20px;" ></i>
+		<i class="fa-brands fa-google-plus-g"style="font-size:18px;float:left;margin-left:20px;"></i>
+		<i class="fa-solid fa-headphones"style="font-size:18px;float:left;margin-left:20px;"></i>
+	    </div>
+	
+	</div> 
+		
+</body>
+</html>
